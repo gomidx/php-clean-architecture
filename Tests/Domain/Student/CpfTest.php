@@ -1,8 +1,9 @@
 <?php
 
-namespace Php\CleanArch;
+namespace Php\CleanArch\Tests\Domain\Student;
 
 use InvalidArgumentException;
+use Php\CleanArch\Domain\Cpf;
 use PHPUnit\Framework\TestCase;
 
 class CpfTest extends TestCase

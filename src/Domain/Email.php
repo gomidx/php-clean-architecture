@@ -1,6 +1,6 @@
 <?php
 
-namespace Php\CleanArch;
+namespace Php\CleanArch\Domain;
 
 use InvalidArgumentException;
 use Stringable;

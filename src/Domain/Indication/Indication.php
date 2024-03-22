@@ -1,8 +1,9 @@
 <?php
 
-namespace Php\CleanArch;
+namespace Php\CleanArch\Domain\Indication;
 
 use DateTimeImmutable;
+use Php\CleanArch\Domain\Student\Student;
 
 class Indication
 {

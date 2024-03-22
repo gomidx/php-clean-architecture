@@ -1,6 +1,6 @@
 <?php
 
-namespace Php\CleanArch;
+namespace Php\CleanArch\Domain\Student;
 
 use InvalidArgumentException;
 use Stringable;
@@ -48,8 +48,19 @@ class PhoneNumber implements Stringable
         }
     }
 
+    public function getPrefix(): string
+    {
+        return $this->prefix;
+    }
+
+    public function getNumber(): string
+    {
+        return $this->number;
+    }
+
+
     public function __toString(): string
     {
-        return '(' . $this->prefix . ') ' . $this->number;
+        return "({$this->prefix}) {$this->number}";
     }
 }
