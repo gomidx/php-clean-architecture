@@ -2,6 +2,7 @@
 
 namespace Php\CleanArch\Domain\Student;
 
+use DomainException;
 use Php\CleanArch\Domain\Cpf;
 use Php\CleanArch\Domain\Email;
 
@@ -23,12 +24,16 @@ class Student
 
     public function addPhoneNumber(string $prefix, string $number): self
     {
+        if (count($this->phoneNumbers) === 2) {
+            throw new DomainException('Student already has two phone numbers.');
+        }
+
         $this->phoneNumbers[] = new PhoneNumber($prefix, $number);
 
         return $this;
     }
 
-    public function getCpf(): string
+    public function getCpf(): Cpf
     {
         return $this->cpf;
     }
