@@ -1,6 +1,6 @@
-# Repositório do curso PHP e Clean Architecture: descomplicando arquitetura de software
+# Repositório dos cursos: PHP e Clean Architecture, PHP e Domain Driven Design
 
-Nesse projeto foram abordados os princípios de arquitetura limpa em PHP.
+Nesse projeto foram abordados os princípios de arquitetura limpa e do padrão DDD em PHP.
 
 ## 🛠️ Construído com
 
